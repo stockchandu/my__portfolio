@@ -1,0 +1,142 @@
+{
+  "main": {
+    "name": "Chandan Kumar Malik",
+    "occupation": "Full stack web developer, a life long student, always learning 🔥",
+
+    "image": "profile_pic.jpg",
+    "bio": "Hii there! 🙋‍♂️ ,I am a MERN stack web developer but am not restricted to any specific technology.and I consider myself a lifelong student, I never ever stop myself to learn new technology.    with over 2 years of experience in the field, I have worked on various projects and different technologies",
+    "contactmessage": "Have a project for me? think I'd be a good fit for your team? I'd love to hear from you, give me a shout by email or by using the form below if you'd like to get in contact with me.",
+    "email": "malikchandan926@gmail.com",
+    "phone": "",
+    "address": {
+      "city": "Bhubaneswar",
+      "state": "India"
+    },
+    "website": "",
+    "resumedownload": "https://drive.google.com/file/d/1OSwfE76-gnS2yDLR94JOXGPwywA0W7DS/view?usp=sharing",
+    "social": [
+      {
+        "name": "github",
+        "url": "https://github.com/stockchandu",
+        "className": "fa fa-github"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/chandan-kumar-mallick-0b926b187/",
+        "className": "fa fa-linkedin"
+      },
+
+      {
+        "name": "Twitter",
+        "url": "https://twitter.com/CHANDAN30051084",
+        "className": "fa fa-twitter"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "",
+    "education": [
+      {
+        "school": "Masai School, Bangalore",
+        "degree": "Full-Stack Web Development",
+        "graduated": "January 2021",
+        "description": "Here I have completed my Full-Stack Web Development journey, achieved much more about how web development works and learnt how to learn by yourself. "
+      },
+      {
+        "school": "Salipur Autonomous College",
+        "degree": "Bachelor in Commerce",
+        "graduated": "March 2019",
+        "description": "I have completed my Bachelor of commerce."
+      }
+    ],
+    "work": [
+      {
+        "company": "High School 1 Sirampog",
+        "title": "Web Developer Elearning System",
+        "years": "Sepetember 2019 - February 2020",
+        "description": "For most of my internship in high school, I developed the e-learning system. Here I have had the opportunity to dig in and get my hands dirty with all the pieces of our software. I have worked with PHP assisted by CodeIgniter Framework and JavaScript"
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "description": "",
+        "image": "javascript.jpg"
+      },
+      {
+        "name": "React JS",
+        "description": "",
+        "image": "react.jpg"
+      },
+      {
+        "name": "Node JS",
+        "description": "",
+        "image": "node.jpg"
+      },
+      {
+        "name": "Material UI",
+        "description": "",
+        "image": "materialui.jpg"
+      },
+      {
+        "name": "MongoDB",
+        "description": "",
+        "image": "mongo.jpg"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Airbnb-Clone",
+        "category": "Clone website airbnb with React JS & Responsive Website",
+        "image": "airbnb-clone.png",
+        "url": "https://airbnb-clone-41bec.web.app/"
+      },
+      {
+        "title": "Messager-Clone",
+        "category": "Clone facebook messager integration Firebase and React JS & Responsive Aps",
+        "image": "facebook-messager-clone.png",
+        "url": "https://facebook-messeger-clone-c5635.web.app/"
+      },
+      {
+        "title": "E-Learning System",
+        "category": "Build website elearning using CodeIgniter, CSS, PHP, and template engine",
+        "image": "elearning.JPG",
+        "url": "https://asinau.site/index.php/login/index"
+      },
+      {
+        "title": "Resume Website",
+        "category": "A React based resume website template",
+        "image": "resume-website.jpg",
+        "url": "https://github.com/tbakerx/react-resume-template"
+      },
+      {
+        "title": "Whatsapp Clone",
+        "category": "I created with MongoDb, Express.js, React.js and Node.js",
+        "image": "whatsapp-mern.JPG",
+        "url": "https://github.com/akhfasarrofi/whatsapp-mern"
+      },
+      {
+        "title": "Company Profile",
+        "category": "Build Template Responsive Company Profile",
+        "image": "landingpage.JPG",
+        "url": "https://github.com/akhfasarrofi/landing-page"
+      },
+      {
+        "title": "Company Profile",
+        "category": "Build Template Responsive Company Profile",
+        "image": "landingpage.JPG",
+        "url": "https://github.com/akhfasarrofi/landing-page"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Many people focus on taking over the world or doing the biggest thing and getting the most users. I think making a difference and doing something cool is intensely focused.",
+        "user": "Zakaria Akhfas - Junior Web Developer && Database Administrator"
+      }
+    ]
+  }
+}
