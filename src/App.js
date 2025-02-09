@@ -1,48 +1,45 @@
-import React, { Component } from 'react';
-import ReactGA from 'react-ga';
-import $ from 'jquery';
-import './App.css';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import About from './Components/About';
-import Resume from './Components/Resume';
+import React, { Component } from "react";
+import ReactGA from "react-ga";
+import $ from "jquery";
+import "./App.css";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
+import About from "./Components/About/About";
+import Resume from "./Components/Resume/Resume";
 
 class App extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      resumeData: {}
+      resumeData: {},
     };
 
     // ReactGA.initialize('UA-110570651-1');
     ReactGA.pageview(window.location.pathname);
-
   }
 
   getResumeData() {
-    const load = document.getElementById('siteLoading')
+    const load = document.getElementById("siteLoading");
     $.ajax({
-      url: '/resumeData.json',
-      dataType: 'json',
+      url: "/resumeData.json",
+      dataType: "json",
       cache: false,
       success: function (data) {
         this.setState({ resumeData: data });
         setTimeout(() => {
-          load.outerHTML = '';
-        }, 500)
+          load.outerHTML = "";
+        }, 500);
       }.bind(this),
       error: function (xhr, status, err) {
         console.log(err);
         alert(err);
-      }
+      },
     });
   }
 
   componentDidMount() {
     this.getResumeData();
   }
-
 
   render() {
     return (
