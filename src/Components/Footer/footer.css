@@ -1,3 +1,9 @@
 .copyright{
     color: white;
 }
+
+.footer__parent{
+    width: 100% !important;
+    background-color: black !important;
+    height: 30px;
+}

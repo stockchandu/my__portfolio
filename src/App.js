@@ -1,56 +1,40 @@
-import React, { Component } from "react";
-import ReactGA from "react-ga";
-import $ from "jquery";
+import React, { useEffect } from "react";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import About from "./Components/About/About";
 import Resume from "./Components/Resume/Resume";
+import { Routes, Route } from "react-router-dom"
+import Blog from "./Components/Blog/Blog";
+import resumeData from "./constant/resumeData.json"
+import HomeBanner from "./Components/HomeBanner/HomeBanner"
+import CallToAction from "./Components/CallToAction/CallToAction"
+import Project from "./Components/Project/Project"
+import { configData } from "./constant/configData"
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      resumeData: {},
-    };
-
-    // ReactGA.initialize('UA-110570651-1');
-    ReactGA.pageview(window.location.pathname);
-  }
-
-  getResumeData() {
-    const load = document.getElementById("siteLoading");
-    $.ajax({
-      url: "/resumeData.json",
-      dataType: "json",
-      cache: false,
-      success: function (data) {
-        this.setState({ resumeData: data });
-        setTimeout(() => {
-          load.outerHTML = "";
-        }, 500);
-      }.bind(this),
-      error: function (xhr, status, err) {
-        console.log(err);
-        alert(err);
-      },
-    });
-  }
-
-  componentDidMount() {
-    this.getResumeData();
-  }
-
-  render() {
+const App = () => {
+  const Main = () => {
     return (
-      <div className="App">
-        <Header data={this.state.resumeData.main} />
-        <About data={this.state.resumeData.main} />
-        <Resume data={this.state.resumeData.resume} />
-        <Footer data={this.state.resumeData.main} />
-      </div>
-    );
+      <>
+        <About about={configData?.aboutMe} />
+        <Resume techSkills={configData?.techSkills} />
+        <Project projectList={configData?.projects?.projectList}/>
+        <CallToAction btnList={configData?.callToAction?.btnList} />
+        <Footer footer={configData?.footer} />
+      </>
+    )
   }
+
+  return (
+    <div className="App">
+      <Header header={configData} />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/tech-blog" element={<Blog />} />
+      </Routes>
+    </div>
+  );
 }
+
 
 export default App;
