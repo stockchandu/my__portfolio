@@ -6,8 +6,6 @@ import About from "./Components/About/About";
 import Resume from "./Components/Resume/Resume";
 import { Routes, Route } from "react-router-dom"
 import Blog from "./Components/Blog/Blog";
-import resumeData from "./constant/resumeData.json"
-import HomeBanner from "./Components/HomeBanner/HomeBanner"
 import CallToAction from "./Components/CallToAction/CallToAction"
 import Project from "./Components/Project/Project"
 import { configData } from "./constant/configData"

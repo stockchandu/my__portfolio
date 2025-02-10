@@ -1,5 +1,4 @@
 import React from 'react';
-import { skillicon } from "../../constant/skillicon";
 import './resume.css'
 
 
