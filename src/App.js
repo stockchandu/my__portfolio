@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router-dom"
 import Blog from "./Components/Blog/Blog";
 import CallToAction from "./Components/CallToAction/CallToAction"
 import Project from "./Components/Project/Project"
-import { configData } from "./constant/configData"
+import { configData } from "./constant/configData.js"
 
 const App = () => {
   const Main = () => {
