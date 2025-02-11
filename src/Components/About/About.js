@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import CallToAction from "../CallToAction/CallToAction";
+import React from "react";
 
 const About = ({ about }) => {
   return (
