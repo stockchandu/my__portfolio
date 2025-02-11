@@ -199,7 +199,6 @@ ul#nav li.current a {
 #about {
    background: #2B2B2B;
    padding-top: 96px;
-   padding-bottom: 66px;
    overflow: hidden;
 }
 
@@ -228,7 +227,9 @@ ul#nav li.current a {
    position: relative;
    width: 250px;
    height: 250px;
-   border-radius: 50%;
+   border-radius: 52%;
+   background-color: black;
+   border: 5px solid rgb(255, 251, 251);
 }
 
 #about .contact-details {

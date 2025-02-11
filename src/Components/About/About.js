@@ -6,7 +6,7 @@ const About = ({ about }) => {
     <section id="about">
       <div className="row">
         {
-          about?.profile?.launchControl && <div className="three columns">
+          about?.profile?.launchControl && <div className="three columns" style={{backgroundColor:"#2B2B2B"}}>
             <img
               className="profile-pic"
               src={about?.profile?.photoUrl}
